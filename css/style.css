@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 18px;
+    color: #161616;
+    background: #D8D8D6;
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.header {
+    background: #81A36B;
+    padding: 25px 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header a {
+    color:#161616;
+    text-decoration: none;
+    line-height: 30px;
+    display: block;
+}
+
+.header-logo {
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-list {
+    display: flex;
+    gap: 90px;
+}
+
+@media screen and (max-width: 1100px) {
+    .header-list {
+        gap: 25px;
+}
+body {
+    line-height: 20px;
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .header-list {
+        display: none;
+}
+}
+
+.burger-menu {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+	z-index:2;
+}
+
+/* код для бургера правильный или нет? */
+
+.burger-menu span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+.burger-menu span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.burger-menu span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+
+
+
+
+
+/* 2 fonts for short code*/ 
+
+.roboto {
+    color: #161616;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserat {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* main section */
+.section-one {
+    display: flex;
+    align-items: center; 
+    gap: 30px;
+    margin-bottom: 120px;
+}
+
+
+.title {
+    color: #161616;
+    text-align: left;
+    font-size: 62px;
+    line-height: normal;
+}
+
+
+.section-one-p {
+    margin-top: 60px;
+    line-height: 164%;
+}
+
+.btn {
+    margin-top: 40px;
+}
+
+.btn-one {
+    background: #81A36B;
+    width: 190px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-two {
+    border: 1px solid #81A36B;
+    width: 190px;
+    height: 60px;
+    margin-left: 65px;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* about us */ 
+
+.about-us {
+    max-width: 540px;
+    text-align: center;
+}
+
+.title-h2 {
+    color: #000;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.about-us-p {
+    color: #161616;
+    text-align: center;
+    line-height: 164%;
+}
+
+/*ADVANTEGES*/
+
+.advanteges {
+    background: #81A36B;
+    padding: 80px 0;
+    margin-top: 120px;
+}
+
+.list-advanteges {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-items {
+    text-align: center;
+}
+
+.list-items p {
+    margin-top: 20px;
+    color: #161616;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* How we work*/
+
+.we-work {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.title-h3 {
+    text-align: center;
+    font-size: 32px;
+    line-height: normal;
+}
+
+.we-work-p {
+    line-height: 164%;
+    margin-top: 60px;
+}
+
+
+/*  OUR WORKS */
+.our-work {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.our-work-h3 {
+    color: #161616;
+    text-align: center;
+    font-size: 32px;
+    line-height: normal;
+}
+
+.card-works {
+    display: flex;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.card-works li {
+    flex: 1 1 30%;
+    background: #81A36B;
+    padding: 15px 15px;
+}
+
+.our-works-img {
+    width: 100%;
+    height: 402px;
+}
+
+.our-work-p {
+    text-align: center;
+    line-height: 164%;
+    margin-top: 23px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #81A36B;
+    height: 390px;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.footer-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.footer-padding {
+    padding-top: 60px;
+}
+
+.contacts {
+    color: #161616;
+    font-size: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164%;
+    margin-bottom: 40px;
+}
+
+.tel {
+    line-height: 164%;
+    text-decoration: none;
+}
+
+.phone {
+    margin-bottom: 20px;
+}
+
+.footer-center-p {
+    font-size: 36px;
+}
+
+.numders {
+    color: #161616;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.icons-p {
+    color: #161616;
+    font-size: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164%;
+    margin: 0 0 20px;
+}
+
+.list-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-container > div {
+    flex-basis: 200px;
+}
+
+@media screen and (max-width: 1100px) {
+    .header-list {
+        gap: 25px;
+}
+body {
+    line-height: 20px;
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .header-list {
+        display: none;
+}
+.burger-menu {
+    display: block;
+}
+.image-top {
+flex-wrap: wrap;
+flex-direction: column;
+}
+.list-advanteges {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+}
